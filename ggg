@@ -1,0 +1,33 @@
+class Point:
+    """
+    A class to represent a point in 2D Cartesian coordinate system.
+
+    Attributes:
+        x (float): The x-coordinate of the point.
+        y (float): The y-coordinate of the point.
+    
+    Methods:
+        translate(dx, dy): Method to translate the point by dx and dy along the x and y axis respectively.
+    """
+    
+    def _init_(self, x=0.0, y=0.0):
+        """
+        Constructs all the necessary attributes for the point object.
+
+        Parameters:
+            x (float): The x-coordinate of the point (default 0.0).
+            y (float): The y-coordinate of the point (default 0.0).
+        """
+        self.x = x
+        self.y = y
+
+    def translate(self, dx, dy):
+        """
+        Translates the point by dx and dy in the x and y directions.
+
+        Parameters:
+            dx (float): The delta change for the x-coordinate.
+            dy (float): The delta change for the y-coordinate.
+        """
+        self.x += dx
+        self.y += dy
